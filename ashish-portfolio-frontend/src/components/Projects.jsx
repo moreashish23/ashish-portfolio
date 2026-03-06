@@ -11,8 +11,7 @@ const Projects = () => {
   const skeletons = [1, 2, 3, 4, 5, 6];
 
   useEffect(() => {
-    axios
-      .get(import.meta.env.VITE_API_URL)
+    axios.get(`${import.meta.env.VITE_API_URL}/projects`)
       .then((res) => {
         setProjects(res.data);
         setLoading(false);
