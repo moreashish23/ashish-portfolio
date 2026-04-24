@@ -53,8 +53,8 @@ public class SecurityConfig {
         configuration.setAllowedOrigins(List.of(
                 "http://localhost:5173",
                 "http://localhost:5174",
-                "https://ashish-more-portfolio.vercel.app/",
-                "https://ashish-portfolio-admin.vercel.app/"
+                "https://ashish-more-portfolio.vercel.app",
+                "https://ashish-portfolio-admin.vercel.app"
         ));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
